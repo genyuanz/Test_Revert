@@ -1,182 +1,461 @@
-ConfigID	"PG2800"
-ConfigNameOverride	"IRx"
-CustData0	"Part ID"
-CustData1	"Nokia Serial Number"
-CustData2	"Manufacturer"
-CustData3	"Linecard Part ID"
-CustData4	"Linecard Serial Number"
-Matched_FPGA	"20210114-Nokia_IRxBeta"
-echoFd	0
-baudFd	9600
-modeFd	0
-NumPDs	12
-ConfigPD1	0	0
-ConfigPD2	0	1
-ConfigPD3	1	0
-ConfigPD4	1	1
-ConfigPD5	0	2
-ConfigPD6	0	3
-ConfigPD7	2	2
-ConfigPD8	2	3
-ConfigPD9	1	2
-ConfigPD10	1	3
-ConfigPD11	3	2
-ConfigPD12	3	3
-ConfigPD13	3	0
-ConfigPD14	3	1
-NumPumps	4
-ConfigPump1	2	2
-ConfigPump2	0	0
-ConfigPump3	3	3
-ConfigPump4	1	1
-NumCtlrs	4
-ConfigCtlr1	0	0	1
-ConfigCtlr2	1	2	3
-ConfigCtlr3	2	0	1
-ConfigCtlr4	3	2	3
-TiltVOA	0	2	0	4	5
-TiltVOA2	1	2	0	6	7
-TiltVOA3	2	2	1	8	9
-UserVOA	3	2	1	3	10
-UserVOA2	-1	2	0	10	12
-TiltVOAThrFd	1.0
-TiltVOAHysFd	0.5
-TiltVOAThrFd2	1.0
-TiltVOAHysFd2	0.5
-TiltVOAThrFd3	1.0
-TiltVOAHysFd3	0.5
-UserVOAThrFd	1.0
-UserVOAHysFd	0.5
-UserVOARange	0	15
-OscPD	11
-OscLosThrFd	-10
-OscLosHysFd	1
-outputTiltFd	-1.0
-losModeFd	0x03030002
-tmpThrFd	5
-tmpHysFd	2
-ildThrFd	100
-ildHysFd	5
-mthThrFd	70
-mthHysFd	2
-mtlThrFd	-5
-mtlHysFd	2
-ctThrFd	5
-ctHysFd	1
-mtxThrFd	85
-mtxHysFd	5
-TiltRange	-4	4
-Ctlr1FFRange	1	1
-Ctlr1FFRate	0.01
-Ctlr1EnableTC	0
-Ctlr1UniversalScaling	1
-Ctlr1Lockstep	0.03
-Ctlr2FFRange	1	1
-Ctlr2FFRate	0.01
-Ctlr2EnableTC	0
-Ctlr2UniversalScaling	1
-Ctlr2Lockstep	0.03
-Ctlr3FFRange	1	1
-Ctlr3UniversalScaling	1
-Ctlr3SlaveFFClamp	10000
-Ctlr4FFRange	1	1
-Ctlr4UniversalScaling	1
-Ctlr4SlaveFFClamp	10000
-Pump1Vppssp	2.425
-Pump1Tsp	"40"
-//Pump1ManagedTsp	"UpdatePumpTsp(0, 4340.0f)"
+Ctlr1LockStep	0.025
+Ctlr2LockStep	0.025
+Ctlr3LockStep	0.025
+Ctlr4LockStep	0.2
 //Pump1ManagedTspBounds	25	35
-Pump1ThermType	2
-Pump1TECVlimCool	3
-Pump1TECVlimHeat	1.5
-Pump1TECVthrN	0.6
-Pump1TECVthrP	0.6
-Pump1PWMThr	140
-Pump2Vppssp	2.425
-Pump2Tsp	"40"
+//Pump1ManagedTsp	"UpdatePumpTsp(0, 5000.0f)"
+//Pump2ManagedTspBounds	40	45
 //Pump2ManagedTsp	"UpdatePumpTsp(1, 5000.0f)"
-//Pump2ManagedTspBounds	35	45
-Pump2ThermType	2
-Pump2TECVlimCool	3
-Pump2TECVlimHeat	1.5
-Pump2TECVthrN	0.6
-Pump2TECVthrP	0.6
-Pump2PWMThr	120
-Pump3Vppssp	2.425
-Pump3Tsp	"40"
-//Pump3ManagedTsp	"UpdatePumpTsp(2, 4340.0f)"
-//Pump3ManagedTspBounds	25	35
-Pump3ThermType	2
-Pump3TECVlimCool	3
-Pump3TECVlimHeat	1.5
-Pump3TECVthrN	0.6
-Pump3TECVthrP	0.6
-Pump4Vppssp	2.425
-Pump4Tsp	"25"
-//Pump4ManagedTsp	"UpdatePumpTsp(3, 4340.0f)"
-//Pump4ManagedTspBounds	25	35
-Pump4ThermType	0
-Pump4TECVlimCool	3
-Pump4TECVlimHeat	1.5
-Pump4TECVthrN	0.6
-Pump4TECVthrP	0.6
-Pump4PWMThr	120
-OSwEn	1
-VOAdBAlt	1
-Stage1ShutdownOnAmpDisable	1
-Stage2ShutdownOnAmpDisable	1
-tmpOutput	0
-tmpxOutput	0
-mthOutput	0
-mtlOutput	0
-mtxOutput	0
-ildOutput	0
-perTmpOutput	0x00000080	0x00000080	0x00200000	0x00200000
-perIldOutput	0x00000040	0x00000040	0x00100000	0x00100000	
-Stage1RflOutput	0
-Stage2RflOutput	0
-Stage1LOPOutput	0
-Stage2LOPOutput	0
-Stage1LOSOutput	0x00000020
-Stage2LOSOutput	0x00080000
-Stage1GainLimitFd	NaN
-Stage2GainLimitFd	NaN
-Pump1Wavelen	974
-Pump2Wavelen	974
-Pump3Wavelen	974
-Pump4Wavelen	974
-EyesafeConstantPower	1
-PD1TZ	0.955
-PD2TZ	1.736
-PD3TZ	0.955
-PD4TZ	1.736
-PD5TZ	0.649	64.9	
-PD6TZ	1.62	162
-PD7TZ	1.02	102
-PD8TZ	1.02	102
-PD9TZ	0.453	45.3
-PD10TZ	0.453	45.3
-PD11TZ	0.453	45.3
-PD12TZ	16.2
-VOA1RHomePos	4
-VOA2RHomePos	4
-VOA3RHomePos	4
-VOA4RHomePos	4
-VOA5RHomePos	4
-//VOA5PowerMode	1
-NumAsc	0
-ASC1PD	-1
-ASC1modeFd	0
-ASC1PD	-1
-ASC1voaPD	12
-ASC1Tsp	40
-ASC1ThermType	2
-ASC1PumpWavelen	974
-NumTosa	0
-TOSA1TspMin	32
-TOSA1TspMax	55
-TOSA1ThermType	0
-NumRosa	0
-Stage1Loop1GainPd	4
-Stage2Loop1GainPd	8
+//Pump3ManagedTspBounds	40	45
+//Pump3ManagedTsp	"UpdatePumpTsp(2, 5000.0f)"
+//Pump4ManagedTspBounds	40	45
+//Pump4ManagedTsp	"UpdatePumpTsp(3, 5000.0f)"
+printFaultBanner	0xD007
+AutoASE	1
+ILDAlarmMaskExpr	"poutTarget > poutILDAlarmMask[sku-760]"
+Stage1ILDAlarmMaskExpr	"poutTarget1 > TOLIN(23.00f)"
+Stage2ILDAlarmMaskExpr	"poutTarget2 > TOLIN(23.00f)"
+SupportedModes	0x3F
+$INIT
+cfg_BinaryTimeout = 100;
+// SupportedModes =
+// (1 << DisableMode) | (1 << ManualMode) | (1 << GainMode) | (1 << PowerMode) | (1 << SPowerMode) | (1 << StageMode);
 
+int sku;
+float tiltVoaRangeH;
+
+const float[22] poutILDAlarmMask =
+{
+	TOLIN(20.00f), // 760
+	TOLIN(16.00f), // 761
+	TOLIN(20.00f), // 762
+	INF,
+	TOLIN(20.00f), // 764
+	TOLIN(17.00f), // 765
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,
+	INF,           // 775 
+	INF,
+	INF,
+	INF,
+	TOLIN(23.50f), // 779
+	INF,
+	INF
+};
+
+int isNotcharNum(int asciiCode)
+{
+	if (asciiCode < 0x30 || asciiCode > 0x39)
+		return 1;
+	else
+		return 0;	
+}
+
+void UpdateCalData ( )
+{
+	int firstChar = CHR(cal_SerialNumber, 0);
+	int secondChar = CHR(cal_SerialNumber, 1);
+	int thirdChar = CHR(cal_SerialNumber, 2);
+	
+	if (isNotcharNum(firstChar)==1 || isNotcharNum(secondChar)==1 || isNotcharNum(thirdChar)==1)
+		sku = 000;
+	else
+		sku = ((CHR(cal_SerialNumber, 0) - 0x30) * 10 + (CHR(cal_SerialNumber, 1) - 0x30)) * 10 + (CHR(cal_SerialNumber, 2) - 0x30);		
+		
+	if (sku == 000)
+		sku = 780;
+	else if (sku == 776	|| sku == 775)
+		tiltVoaRangeH = TOLIN(28.0f);
+	else if (sku == 777)
+		tiltVoaRangeH = TOLIN(21.0f);
+}
+
+int numStages = GetNumStages();
+
+$PRECMDPROC
+
+SetAliasAlarm("VOA1", GetAlarm("TILTVOA"), 1);
+SetAliasAlarm("OUTVOA", GetAlarm("USERVOA"), 1);
+
+float ModeGStage2GSetpoint ( )
+{
+	if (sku == 762)
+		return GetStage(numStages-1).GetOptFlatGain() * TOLIN(cal_VOATilt[1] * 0.5f * MAX(GetModeSetpoint() - 20.00f, 0.00f)) / (gTilt2 * MIN(gMidstage * TOLIN(10.00f), 1.0f));
+	else if (sku == 776)
+		return TOLIN(MAX(7.00f, 26.20f - 1.00f * TODB(GetModeSetpoint2()) - 1.40f * (GetTiltSetpoint() + 1.00f)));
+	else
+		return GetStage(numStages-1).GetOptFlatGain() / MIN(gMidstage * TOLIN(10.00f), 1.0f);
+}
+
+const int GainMode = 0x02;
+const int PowerMode = 0x03;
+const int SPowerMode = 0x04;
+
+int AllowSetTiltVOA ( )
+{
+	return (GetStage(0).GetMode() != GainMode) && (GetStage(0).GetMode() != PowerMode) && (GetStage(0).GetMode() != SPowerMode);
+}
+
+const int MSEQF_MODE_CHANGE = 1;
+const int MSEQF_USERFLAG = 2;
+
+void UpdateTiltVOASetpoint ( int mseqFlags )
+{
+	if (GetStage(0).GetShutdownMode().IsFalse() && GetStage(0).GetEyesafeMode().IsFalse() && !GetStage(0).GetLOSAlarm().GetStatus())
+	{
+		float g = NAN;
+		if (GetStage(0).GetMode() == GainMode)
+		{
+			if (GetStage(0).GetInPd().GetTrackedPowerChanged() || ((mseqFlags & MSEQF_MODE_CHANGE) != 0))
+				g = GetStage(0).GetSetpoint();
+		}
+		else if ((GetStage(0).GetMode() == PowerMode) || (GetStage(0).GetMode() == SPowerMode))
+		{
+			g = GetStage(0).GetGain();
+		}
+		if (!ISNAN(g))
+		{
+			if (numStages > 1 && GetStage(numStages-1).GetMode() == GainMode)
+			{
+				if (sku == 762)
+					g = g * TOLIN(cal_VOATilt[1] * 0.5f * MAX(GetModeSetpoint() - 20.00f, 0.00f)) / (gTilt2 * MIN(gMidstage * TOLIN(10.00f), 1.0f));
+				else if (sku == 776)
+					g = g * GetStage(numStages-1).GetSetpoint();
+				else
+					g = g / MIN(gMidstage * TOLIN(10.00f), 1.0f);
+			}
+
+			const float old_voaSetpoint = GetVOA(cfg_TiltVOA[0]).GetGainSetpoint();
+			float new_voaSetpoint = NAN;
+			float r = NAN;
+			if (cfg_VOAdBAlt==0)
+			{	
+				new_voaSetpoint = gTilt1 * (cal_VOA[0] + g * (cal_VOA[1] + g * cal_VOA[2]) + (cal_VOA[3] + g * cal_VOA[4]) * (GetPin() * g));
+				r = new_voaSetpoint / old_voaSetpoint;
+			}
+			else if (cfg_VOAdBAlt==1)
+			{
+				float gdB = NAN;
+				gdB = TODB(g);
+				const float new_voaSetpoint_dB = TODB(gTilt1) + cal_VOA[0] + gdB * (cal_VOA[1] + gdB * cal_VOA[2]) + (cal_VOA[3] + gdB * cal_VOA[4]) * (GetPin() * gdB);
+				new_voaSetpoint = TOLIN(new_voaSetpoint_dB);
+				r = new_voaSetpoint / old_voaSetpoint;
+			}
+			if (!((r >= TOLIN(-0.01f)) && (r <= TOLIN(+0.01f))))
+			{
+				GetVOA(cfg_TiltVOA[0]).SetGainSetpoint(new_voaSetpoint);
+			}
+		}
+	}
+}
+
+float Stage1CalcASE ( float g )
+{
+//	float compensation = (gTilt1 - 1) * (cal_Stage1ASE[4] + g * cal_Stage1ASE[5]);
+//	if (sku == 777)
+//		compensation = (TOLIN(GetTiltSetpoint()) - 0.89125) * (cal_Stage1ASE[4] + (TOLIN(GetTiltSetpoint()) - 0.89125) * cal_Stage1ASE[5]);
+//	else if (sku == 778)
+//		compensation = (TOLIN(GetTiltSetpoint()) - 0.79432) * (cal_Stage1ASE[4] + (TOLIN(GetTiltSetpoint()) - 0.79432) * cal_Stage1ASE[5]);
+//		
+//	return (cal_Stage1ASE[0] + g * (cal_Stage1ASE[1] + g * (cal_Stage1ASE[2] + g * cal_Stage1ASE[3])) + compensation);
+
+//Following from doug
+	float compensation = (TOLIN(-GetTiltSetpoint()) - 1) * (cal_Stage1ASE[4] + g * cal_Stage1ASE[5]);	
+	return (cal_Stage1ASE[0] + g * (cal_Stage1ASE[1] + g * (cal_Stage1ASE[2] + g * cal_Stage1ASE[3])) + compensation);
+}
+
+float Stage2CalcASE ( float g )
+{
+//Following from doug
+	float compensation = (TOLIN(-GetTiltSetpoint()) - 1) * (cal_Stage2ASE[4] + g * cal_Stage2ASE[5]);	
+	return (cal_Stage2ASE[0] + g * (cal_Stage2ASE[1] + g * (cal_Stage2ASE[2] + g * cal_Stage2ASE[3])) + compensation);
+}
+
+const int KEYWORD_TEMP = 0x100;
+const int KEYWORD_SET  = 0x200;
+const int KEYWORD_LLIM = 0x400;
+const int KEYWORD_ULIM = 0x800;
+
+// >INFO
+
+RegisterTextCommand("INFO", "VER"); // Make INFO an alias for VER
+
+// >PLIM [p|D]
+
+const int setplimId = 103;
+const int getplimId = 104;
+const ParseElement setplimTree = CreateParseSequenceElement(CreateParseChoiceElement(CreateParseFloatElement(GetStage(numStages-1).GetPowerMin(), GetStage(numStages-1).GetPowerMax(), 2), CreateParseKeywordElement("D", NAN)), CreateParseEndElement(setplimId));
+const ParseElement getplimTree = CreateParseEndElement(getplimId);
+const ParseElement plimTree = CreateParseChoiceElement(setplimTree, getplimTree);
+RegisterTextCommand("PLIM", plimTree);
+
+void DoSetPlim ( Comm c, ParseResult r )
+{
+	if (!GetStage(numStages-1).SetPLim(TOLIN(r.GetArgFloat(1)), c.GetNVMode()))
+		c.SendFormattedString("?%s", "Error writing non-volatile settings");
+}
+
+void DoGetPlim ( Comm c )
+{
+	const float plim = TODB(GetStage(numStages-1).GetPLim());
+	c.SendFormattedFloat((!ISNAN(plim) ? "PLIM: %.2f dBm" : "PLIM: D"), plim);
+}
+
+// >COIL [TEMP|SET|LLIM|ULIM]
+
+const int coilId = 111;
+const ParseElement coilKeywords = CreateParseChoiceElement(CreateParseKeywordElement("TEMP", KEYWORD_TEMP), CreateParseKeywordElement("SET", KEYWORD_SET), CreateParseKeywordElement("LLIM", KEYWORD_LLIM), CreateParseKeywordElement("ULIM", KEYWORD_ULIM));
+const ParseElement coilTree = CreateParseChoiceElement(CreateParseSequenceElement(coilKeywords, CreateParseEndElement(coilId)), CreateParseEndElement(coilId));
+RegisterTextCommand("COIL", coilTree);
+
+void DoCoil ( Comm c, ParseResult r )
+{
+	const int parm = (r.GetArgCount() != 0) ? r.GetArgInt(1) : KEYWORD_TEMP | KEYWORD_SET | KEYWORD_LLIM | KEYWORD_ULIM;
+
+	const float ctthr = GetAlarm("CT").GetThreshold();
+	const ThermalController tc = GetThermalController(0);
+	const float temp = tc.GetTemp();
+	const float tsp = tc.GetTsp();
+
+	if (parm & KEYWORD_TEMP)
+		c.SendFormattedFloat("COIL TEMP: %.1f C", temp);
+	if (parm & KEYWORD_SET)
+		c.SendFormattedFloat("COIL SET: %.1f C", tsp);
+	if (parm & KEYWORD_LLIM)
+		c.SendFormattedFloat(!ISNAN(ctthr) ? "COIL LLIM: %.1f C" : "COIL LLIM: D", tsp - ctthr);
+	if (parm & KEYWORD_ULIM)
+		c.SendFormattedFloat(!ISNAN(ctthr) ? "COIL ULIM: %.1f C" : "COIL ULIM: D", tsp + ctthr);
+}
+
+// >PTMP [pumpnum] [SET|LLIM|ULIM]
+
+const int ptmpId = 113;
+const ParseElement ptmpKeywords = CreateParseChoiceElement(CreateParseKeywordElement("SET", KEYWORD_SET), CreateParseKeywordElement("LLIM", KEYWORD_LLIM), CreateParseKeywordElement("ULIM", KEYWORD_ULIM), CreateParseEndElement(ptmpId));
+const ParseElement ptmpTree = CreateParseChoiceElement(CreateParseSequenceElement(CreateParseIntElement(1, cfg_NumPumps), ptmpKeywords, CreateParseEndElement(ptmpId)), CreateParseSequenceElement(ptmpKeywords, CreateParseEndElement(ptmpId)));
+//RegisterTextCommand("PTMP", ptmpTree);
+
+void DoPtmp ( Comm c, ParseResult r )
+{
+	int pumpIndex = 1;
+	int pumpCount = cfg_NumPumps;
+	int parm = KEYWORD_SET | KEYWORD_LLIM | KEYWORD_ULIM;
+	int argi = 1;
+	if ((argi <= r.GetArgCount()) && (r.GetArgInt(argi) <= 0xFF))
+	{
+		pumpIndex = pumpCount = r.GetArgInt(argi);
+		argi += 1;
+	}
+	if (argi <= r.GetArgCount())
+	{
+		parm = r.GetArgInt(argi);
+	}
+
+//	const float tmpthr = GetAlarm("TMP").GetThreshold();
+
+	while (pumpIndex <= pumpCount)
+	{
+		const float pumptsp = GetPump(pumpIndex - 1).GetNominalTsp();
+		float tmpthr = 0.0;
+		
+		if (pumpIndex == 0)
+			tmpthr = GetAlarm("TMP1").GetThreshold();
+		else if (pumpIndex == 1)
+			tmpthr = GetAlarm("TMP2").GetThreshold();
+		else if (pumpIndex == 2)
+			tmpthr = GetAlarm("TMP3").GetThreshold();
+		else if (pumpIndex == 3)
+			tmpthr = GetAlarm("TMP4").GetThreshold();						
+
+		if (parm & KEYWORD_SET)
+			c.SendFormattedIntFloat("PTMP %d SET: %.1f C", pumpIndex, pumptsp);
+		if (parm & KEYWORD_LLIM)
+			c.SendFormattedIntFloat(!ISNAN(tmpthr) ? "PTMP %d LLIM: %.1f C" : "PTMP %d LLIM: D", pumpIndex, pumptsp - tmpthr);
+		if (parm & KEYWORD_ULIM)
+			c.SendFormattedIntFloat(!ISNAN(tmpthr) ? "PTMP %d ULIM: %.1f C" : "PTMP %d ULIM: D", pumpIndex, pumptsp + tmpthr);
+
+		pumpIndex += 1;
+	}
+}
+
+// >WID
+
+const int widId = 117;
+const ParseElement widTree = CreateParseEndElement(widId);
+RegisterTextCommand("WID", widTree);
+
+void DoWid ( Comm c )
+{
+	if (cfg_CustData9 != "CustData9" && cfg_CustData9 != "")
+		c.SendFormattedString("%s", cfg_CustData9);
+}
+
+
+// CalActtilt
+float CalActtilt()
+{
+	float g = GetStage(0).GetGain();
+	float gsp = GetModeSetpoint();
+	if (numStages > 1 && GetStage(numStages-1).GetMode() == GainMode)
+	{
+		if (sku == 762)
+			g = g * TOLIN(cal_VOATilt[1] * 0.5f * MAX(GetModeSetpoint() - 20.00f, 0.00f)) / (gTilt2 * MIN(gMidstage * TOLIN(10.00f), 1.0f));
+		else if (sku == 776)
+			g = g * GetStage(numStages-1).GetGain();
+		else
+			g = g / MIN(gMidstage * TOLIN(10.00f), 1.0f);
+	}
+
+	float value=NAN;
+	if (cfg_VOAdBAlt==0)
+	{
+		value = TODB(GetVOA(0).GetGain(0) / (cal_VOA[0] + g * (cal_VOA[1] + g * cal_VOA[2]) + (cal_VOA[3] + g * cal_VOA[4]) * (GetPin() * g))) / cal_VOATilt[0]; 
+	}
+	else if (cfg_VOAdBAlt==1)
+	{
+	//	value =(-(TODB(GetStage(0).GetGainInt()*GetStage(1).GetGainInt())+GetVOA(0).GetAtt())+(gsp - cal_VOA[0] - gsp * (cal_VOA[1] + gsp * cal_VOA[2])))/cal_VOATilt[0];
+		value = GetTiltSetpoint()+(GetVOA(cfg_TiltVOA[0]).GetAttSetpoint()-GetVOA(cfg_TiltVOA[0]).GetAtt())/cal_VOATilt[0];
+	}
+	return value;
+}
+
+
+// >MAXPTILT
+
+const int maxptiltId = 119;
+const ParseElement maxptiltTree = CreateParseEndElement(maxptiltId);
+RegisterTextCommand("MAXPTILT", maxptiltTree);
+
+void DoMaxptilt ( Comm c )
+{	
+	float g = NAN;
+	if (GetStage(0).GetMode() == GainMode)
+		g = GetStage(0).GetSetpoint();
+	else if ((GetStage(0).GetMode() == PowerMode) || (GetStage(0).GetMode() == SPowerMode))
+		g = GetStage(0).GetGain();
+	if (numStages > 1 && GetStage(numStages-1).GetMode() == GainMode)
+	{
+		if (sku == 762)
+			g = g * TOLIN(cal_VOATilt[1] * 0.5f * MAX(GetModeSetpoint() - 20.00f, 0.00f)) / (gTilt2 * MIN(gMidstage * TOLIN(10.00f), 1.0f));
+		else if (sku == 776)
+			g = g * GetStage(numStages-1).GetSetpoint();
+		else
+			g = g / MIN(gMidstage * TOLIN(10.00f), 1.0f);
+	}
+
+//	const float value = -TODB((cal_VOA[0] + g * (cal_VOA[1] + g * cal_VOA[2]) + (cal_VOA[3] + g * cal_VOA[4]) * (GetPin() * g))) / cal_VOATilt[0]; 
+	float value=NAN;
+	if (cfg_VOAdBAlt==0)
+	{
+		value = -TODB(cal_VOA[0] + g * (cal_VOA[1] + g * cal_VOA[2]) + (cal_VOA[3] + g * cal_VOA[4]) * (GetPin() * g)) / cal_VOATilt[0];
+	}
+	else if (cfg_VOAdBAlt==1)
+	{
+		float gdB = NAN;
+		gdB = TODB(g);
+		float acttilt = CalActtilt ();
+		value = MAX(-( TODB(gTilt1) + cal_VOA[0] + gdB * (cal_VOA[1] + gdB * cal_VOA[2]) + (cal_VOA[3] + gdB * cal_VOA[4]) * (GetPin() * gdB)),0.0f) / cal_VOATilt[0] + acttilt;
+	}
+	c.SendFormattedFloat("MAXPTILT: %.2f dB", value);
+//	c.SendFormattedFloat("GetTiltSetpoint(): %.2f dB", GetTiltSetpoint());
+//	c.SendFormattedFloat("GetVOA(0).GetAttSetpoint(): %.2f dB", GetVOA(0).GetAttSetpoint());
+//	c.SendFormattedFloat("GetVOA(0).GetAtt(): %.2f dB", GetVOA(0).GetAtt());
+}
+
+// >ACTTILT
+
+const int acttiltId = 121;
+const ParseElement acttiltTree = CreateParseEndElement(acttiltId);
+RegisterTextCommand("ACTTILT", acttiltTree);
+
+void DoActtilt ( Comm c )
+{
+	float value = CalActtilt();
+	c.SendFormattedFloat("ACTTILT: %.2f dB", value);
+	
+}
+
+// >POSC
+
+const int poscId = 131;
+const ParseElement poscTree = CreateParseEndElement(poscId);
+RegisterTextCommand("POSC", poscTree);
+
+void DoPosc ( Comm c )
+{
+	if ( cfg_OscPD >= 0 && cfg_OscPD < cfg_NumPDs )
+		c.SendFormattedFloat("POSC: %.2f dBm", TODB(GetPhotodiode(cfg_OscPD).GetMeanPower()));
+	else
+		c.SendFormattedString("%s", "?Not implemented!");
+}
+
+// >POUT
+
+const int poutId = 132;
+const ParseElement poutTree = CreateParseEndElement(poutId);
+RegisterTextCommand("POUT", poutTree);
+
+void DoPout ( Comm c )
+{
+	float pout = GetPout();
+	if (cfg_UserVOA[0] >= 0)
+	{
+		float voaGain = GetVOA(cfg_UserVOA[0]).GetGain(0);
+		if (!ISNAN(voaGain))
+			pout *= voaGain;
+	}
+	c.SendFormattedFloat("POUT: %.2f dBm", TODB(pout));
+}
+
+// >PSIG
+
+const int psigId = 133;
+const ParseElement psigTree = CreateParseEndElement(psigId);
+RegisterTextCommand("PSIG", psigTree);
+
+void DoPsig ( Comm c )
+{
+	float psig = GetPsig();
+	if (cfg_UserVOA[0] >= 0)
+	{
+		float voaGain = GetVOA(cfg_UserVOA[0]).GetGain(0);
+		if (!ISNAN(voaGain))
+			psig *= voaGain;
+	}
+	c.SendFormattedFloat("PSIG: %.2f dBm", TODB(psig));
+}
+
+// >PSV
+
+const int psvId = 134;
+const ParseElement psvTree = CreateParseEndElement(psvId);
+RegisterTextCommand("PSV", psvTree);
+
+void DoPsv ( Comm c )
+{
+	const float psv = ReadSupplyVoltage();
+	c.SendFormattedFloat("PSV: %.3f V", psv);
+}
+
+void DoTextCommand ( Comm c, ParseResult r )
+{
+	const int id = r.GetId();
+	if (id == setplimId) { DoSetPlim(c, r); return; }
+	if (id == getplimId) { DoGetPlim(c); return; }
+	if (id == coilId) { DoCoil(c, r); return; }
+	if (id == ptmpId) { DoPtmp(c, r); return; }
+	if (id == widId) { DoWid(c); return; }
+	if (id == maxptiltId) { DoMaxptilt(c); return; }
+	if (id == acttiltId) { DoActtilt(c); return; }
+	if (id == poscId) { DoPosc(c); return; }
+	if (id == poutId) { DoPout(c); return; }
+	if (id == psigId) { DoPsig(c); return; }
+	if (id == psvId) { DoPsv(c); return; }	
+	c.SendFormattedInt("Unknown command %d", id);
+}
